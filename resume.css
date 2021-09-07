@@ -1,0 +1,400 @@
+body {
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: Roboto, Helvetica, Arial, serif;
+    background:#f5f0f2;
+    background-size: cover;
+    background-image: url("http://ftp.riken.jp/Linux/scientific/graphics/version-3/backgrounds/Edge.of.Space/atomshine-16-9.svg");
+    
+  }
+  
+  header img {
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+    width: 200px;
+    border: 5px solid #fff;
+  }
+  
+  aside {
+    
+    border-top: 0px solid #26A69A;
+    border-bottom: 0px solid #00695C;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    height: 250px;
+    width: 250px;
+    background:#f08080;  
+    background-size: cover;
+    overflow: hidden;
+    box-shadow: 0 0 100px 10px #fff;
+    transition: all ease 0.3s;
+  }
+  
+  aside:hover {
+    border-top: 4px solid #26A69A;
+    border-bottom: 4px solid #00695C;
+    border-radius: 5px;
+    height: 520px;
+    width: 350px;
+    box-shadow: 0 0 70px 10px #fff;
+  }
+  
+  aside:hover header img {
+    animation: profile_image 2000ms linear both;
+    animation-delay: 0.5s;
+  }
+  
+  header {
+    text-align: center;
+  }
+  
+  header h1 {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+    font-size: 25px;
+    line-height: 25px;
+    display: inline-block;
+    padding: 10px;
+    transition: all ease 0.250s;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+  }
+  
+  aside:hover header h1 {
+    margin-top: 0px;
+    outline: 0 solid #fff;
+    border-top: 0px solid #fff;
+    border-bottom: 1px solid #fff;
+  }
+  
+  header h2 {
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 0px;
+    margin: 0;
+  }
+  
+  .profile-bio {
+    margin-top: 20px;
+    padding: 1px 20px 10px 20px !important;
+    transition: all linear 1.5s;
+    color: #fff;
+    font-size: 14px;
+    opacity: 0;
+     
+  }
+  
+  aside:hover .profile-bio {
+    opacity: 1;
+  }
+  
+  .profile-bio p:first-child {
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .profile-social-links {
+    position: relative;
+    margin-top: -440px;
+    margin-left: -100px;
+    list-style-type: none;
+    opacity: 0;
+    transition: all ease 0.5s;
+  }
+  aside:hover .profile-social-links{
+      margin-left: -30px;
+      opacity: 1;
+  }
+  .profile-social-links li img{
+      width: 30px;
+      background: #fff;
+      border-radius: 50%;
+      padding: 5px;
+  }
+  .button{
+      background-color: #4caf50; /*green*/
+      border: none;
+      padding: 13px 35px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      margin: 4px 18px;
+  }
+  .button1{
+      background-color: white;
+      color: black;
+      border: 2px solid #4caf50;
+      border-style: inset;
+  
+  }
+  .button1:hover{
+      
+      background-color: #4caf50;
+        color:white;
+        display: inline-block;
+  }
+  .button2{
+      background-color: white;
+      color: black;
+      border: 2px solid #008cba;
+      border-style: inset;
+  }
+  .button2:hover{
+      background-color: #008cba;
+      color: white;
+  }
+
+  .button1:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.button2:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+   
+}
+
+  #name{
+      color:#fff;
+  }
+
+ 
+#SkillBox {
+    
+    float:left;
+    display:none;
+    font-size: 20px;
+    font-family: 'Indie Flower', cursive;
+    width: 30%;
+    height: auto;
+    margin: 40px auto;
+    background-color: #ffebcd;
+    border: 1px solid #cdcdcd;
+    padding: 10px;
+    border-radius:20px;
+    -o-border-radius:20px;
+    -webkit-border-radius:20px;
+    -ms-border-radius:20px;
+    -moz-border-radius:20px;  
+    margin-top: 0px;
+}
+#SkillBox img {
+    width: 20%;
+    height: 10%;
+    margin: auto 35%;
+    padding: 10px;
+}
+.SkillBar {
+    width: 90%;
+    height: 50px;
+    position: relative;
+    background: rgba(17, 17, 17, .3);
+    margin: 20px auto;
+
+}
+#Skill-HTML {
+    width: 90%;
+    animation: Animate-HTML 4s;
+    -webkit-animation: Animate-HTML 4s;
+    -moz-animation: Animate-HTML 4s;
+    -o-animation: Animate-HTML 4s;
+    height: 50px;
+    position: absolute;
+    background-color: #ea8564;
+}
+@keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: 90%}
+}@-webkit-keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: 90%}
+}@-moz-keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: 90%}
+}@-o-keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: 90%}
+}#Skill-CSS {
+    animation: Animate-CSS 5s;
+    -webkit-animation: Animate-CSS 5s;
+    -moz-animation: Animate-CSS 5s;
+    -o-animation: Animate-CSS 5s;
+    width: 80%;
+    height: 50px;
+    position: absolute;
+    background-color: #55a69f;
+}
+@keyframes Animate-CSS {
+    from {
+    width: 10px;
+}
+to {
+    width: 80%}
+}@-webkit-keyframes Animate-CSS {
+    from {
+    width: 10px;
+}
+to {
+    width: 80%}
+}@-moz-keyframes Animate-CSS {
+    from {
+    width: 10px;
+}
+to {
+    width: 80%}
+}@-o-keyframes Animate-CSS {
+    from {
+    width: 10px;
+}
+to {
+    width: 80%}
+}#Skill-JS {
+    animation: Animate-JS 4s;
+    -webkit-animation: Animate-JS 4s;
+    -moz-animation: Animate-JS 4s;
+    -o-animation: Animate-JS 4s;
+    width: 70%;
+    height: 50px;
+    position: absolute;
+    background-color: #c44e45;
+}
+@keyframes Animate-JS {
+    from {
+    width: 10px;
+}
+to {
+    width: 70%}
+}@-webkit-keyframes Animate-JS {
+    from {
+    width: 10px;
+}
+to {
+    width: 70%}
+}@-moz-keyframes Animate-JS {
+    from {
+    width: 10px;
+}
+to {
+    width: 70%}
+}@-o-keyframes Animate-JS {
+    from {
+    width: 10px;
+}
+to {
+    width: 70%}
+}
+
+#Skill-Django {
+    animation: Animate-Django 4s;
+    -webkit-animation: Animate-Django 4s;
+    -moz-animation: Animate-Django 4s;
+    -o-animation: Animate-Django 4s;
+    width: 65%;
+    height: 50px;
+    position: absolute;
+    background-color: #8e930c;
+}
+@keyframes Animate-Django {
+    from {
+    width: 10px;
+}
+to {
+    width: 65%}
+}@-webkit-keyframes Animate-Django {
+    from {
+    width: 10px;
+}
+to {
+    width: 65%}
+}@-moz-keyframes Animate-Django {
+    from {
+    width: 10px;
+}
+to {
+    width: 65%}
+}@-o-keyframes Animate-Django {
+    from {
+    width: 10px;
+}
+to {
+    width: 65%}
+}#Skill-JAVA {
+    animation: Animate-JAVA 4s;
+    -webkit-animation: Animate-JAVA 4s;
+    -moz-animation: Animate-JAVA 4s;
+    -o-animation: Animate-JAVA 4s;
+    width: 60%;
+    height: 50px;
+    position: absolute;
+    background-color: #5A69A6;
+}
+@keyframes Animate-JAVA {
+    from {
+    width: 10px;
+}
+to {
+    width: 60%}
+}@-webkit-keyframes Animate-JAVA {
+    from {
+    width: 10px;
+}
+to {
+    width: 60%}
+}@-moz-keyframes Animate-JAVA {
+    from {
+    width: 10px;
+}
+to {
+    width: 60%}
+}@-o-keyframes Animate-JAVA {
+    from {
+    width: 10px;
+}
+to {
+    width: 60%}
+} 
+.Skill-Area {
+    z-index: 1;
+    float: left;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 15px;
+    text-shadow: none;
+    color: #fff;
+    font-family: Lato-Regular, sans-serif;
+    font-size: 18px;
+}
+.PercentText {
+    z-index: 3;
+    position: relative;
+    padding-right: 15px;
+    margin-top: 15px;
+    float: right;
+    text-shadow: none;
+    color: #fff;
+    font-family: Lato-Regular, sans-serif;
+    font-size: 18px;
+}
